@@ -1,0 +1,53 @@
+.status-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(60, 60, 60, 0.18);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-modal {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(31,38,135,0.18);
+  padding: 36px 44px;
+  min-width: 320px;
+  max-width: 90vw;
+  z-index: 2001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: statusModalFadeIn 0.3s;
+}
+
+@keyframes statusModalFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.status-modal-success .status-modal-icon {
+  margin-bottom: 18px;
+}
+
+.status-modal-failure .status-modal-icon {
+  margin-bottom: 18px;
+}
+
+.status-modal-message {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.status-modal-submessage {
+  font-size: 1.08rem;
+  color: #666;
+  text-align: center;
+}
