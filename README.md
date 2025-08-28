@@ -1,5 +1,9 @@
 # DataVista: Interactive Dashboard Web Application
 
+## Demo Video
+- **YouTube (Unlisted):** https://youtu.be/atvPLNEW8GA?si=BnhkhamhirgiGKJo 
+- **Google Drive:** [https://drive.google.com/file/d/1mA_kMN_mf0kYv6YMC0I-2ZoLwpVERzCS/view?usp=sharing]  
+
 ## Overview
 DataVista is a full stack web application featuring a Django backend and a React frontend. It displays an interactive dashboard with global development data, including economic, population, and environmental indicators from the World Bank.
 
@@ -20,8 +24,8 @@ DataVista is a full stack web application featuring a Django backend and a React
   - Status modals for login/registration feedback
 
 ## Data Source
-- [World Bank Open Data](https://data.worldbank.org/)
-- Sample CSVs included for GDP, population, unemployment
+- **World Bank Open Data** — downloaded and preloaded into the backend.  
+- Sample CSVs in `/backend/dashboard/` for GDP, Population, etc., included in this project.
 
 ## Setup Instructions
 ### Backend (Django)
@@ -73,6 +77,13 @@ DataVista is a full stack web application featuring a Django backend and a React
   "proxy": "http://localhost:8000"
   ```
 - For deployment, update allowed hosts and CORS settings in Django
+
+
+## Roadmap / Future Work
+- Theme toggle implementation (Dark/Light mode)
+- Deployment to Render/Vercel
+- Export charts as PDF
+- Persist uploaded datasets per user
 
 ## Author
 Developed by Jyothsna
